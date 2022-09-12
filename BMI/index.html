@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../globalgames.css">
+    <link rel="stylesheet" href="gmn.css">
+    <title>Check your BMI</title>
+</head>
+
+<body>
+    <script>
+        let y = prompt("your height:");
+        let x = prompt("your weight");
+        let BMI = Math.floor(x / (y * y));
+        if (BMI > 25) {
+            alert("BMI :" + BMI + "- overweight!");
+            console.log(BMI);
+        }
+        else if (BMI < 18.5)
+            alert("BMI:" + BMI + " - underweight!");
+        else alert("BMI: " + BMI + "- normal");
+    </script>
+</body>
+
+</html>
